@@ -1,8 +1,26 @@
 aid: blue-nile
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/blue-nile.png
 name: Blue Nile
-description: 'Blue Nile is a company surfaced as a portfolio company of bessemer-venture-partners, lightspeed-venture-partners,
-  trinity-ventures and added to the API Evangelist network as a stub for enrichment. Sector: consumer.
-  This profile is a lead awaiting the enrichment pipeline.'
+description: 'Blue Nile is an online retailer of diamonds and fine jewelry, founded
+  in 1999 and headquartered in Seattle, Washington. It pioneered the direct-to-consumer
+  model for engagement rings and loose diamonds, letting shoppers search and compare
+  certified diamonds by cut, color, clarity, and carat and build custom rings, wedding
+  bands, and gifts online. The company is now part of Signet Jewelers. Blue Nile is
+  included in the API Evangelist network as a consumer / e-commerce company profile;
+  it was originally surfaced as a portfolio company of Bessemer Venture Partners,
+  Lightspeed Venture Partners, and Trinity Ventures. No public developer API, OpenAPI
+  specification, or SDK surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/blue-nile/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- E-Commerce
+- Retail
+- Jewelry
+- Diamonds
+- Direct-to-Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/blue-nile-domain-security.yml
 - type: Website
   url: https://www.bluenile.com/
+- type: Blog
+  url: https://www.bluenile.com/blog
+- type: Support
+  url: https://www.bluenile.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.bluenile.com/policies/privacy
+- type: TermsOfService
+  url: https://www.bluenile.com/policies/terms-and-conditions
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
